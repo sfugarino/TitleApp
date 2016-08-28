@@ -1,0 +1,15 @@
+﻿<div *ngIf="title">
+    <h2>{{title.titleNameSortable}}</h2>
+    <div><label>Realease:&nbsp;</label>{{title.releaseYear}}</div>
+
+    <h5>Storyline:</h5>
+    <div>
+        <div class="list-group" >
+          <a href="#" class="list-group-item" *ngFor="let storyline of title.storylines" >
+            <h4 class="list-group-item-heading">{{ storyline.language }}</h4>
+            <p class="list-group-item-text">{{ storyline.description }}</p>
+          </a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+﻿ <div class="row">
+    <div class="col-sm-2 col-md-3" >       
+        <h4>Titles</h4>
+        <div class="list-group" style="max-height:480px; overflow-y:scroll;">
+            <a *ngFor="let title of titles | async" 
+               href="#" 
+               class="list-group-item" 
+               [class.selected]="title === selectedTitle"
+               (click)="onSelect(title)">{{title.titleNameSortable}}</a>
+        </div>
+    </div>
+    <div class="col-sm-10 col-md-9 hidden-xs">
+        <title-details [title]="selectedTitle"></title-details>
+    </div>
+</div>

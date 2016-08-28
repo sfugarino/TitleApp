@@ -1,0 +1,16 @@
+﻿main {
+  min-height: 200px;
+  padding: 10px 80px;
+}
+
+h1 {
+    color: royalblue;
+    padding-bottom: 10px;
+}
+
+.waitloading {
+    font-size: 26px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
